@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <!-- Faz o site se ajustar à tela do celular -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[Seu nome] | Portfólio</title>
+  <meta name="description" content="Portfólio de [Seu nome], estudante de curso técnico de TI.">
+  <!-- O CSS e o JS são os ÚNICOS arquivos extras do site -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== TOPO + MENU ========== -->
+  <!-- Cada link do menu aponta para o id de uma seção (href="#projetos" -> id="projetos") -->
+  <header class="topo">
+    <a class="logo" href="#inicio">[Seu nome]</a>
+    <button class="botao-menu" id="botaoMenu" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav class="menu" id="menu">
+      <a href="#sobre">Sobre</a>
+      <a href="#evolucao">Evolução</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#skills">Skills</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== INÍCIO ========== -->
+    <section class="secao inicio" id="inicio">
+      <h1>[Seu nome]</h1>
+      <p class="destaque">Estudante de curso técnico de TI, em formação até o início de 2028.</p>
+      <p>[Uma ou duas frases sobre o que você busca: estágio, primeira vaga, área de interesse.]</p>
+      <a class="botao" href="#projetos">Ver projetos</a>
+    </section>
+
+    <!-- ========== SOBRE ========== -->
+    <section class="secao" id="sobre">
+      <h2>Sobre mim</h2>
+      <p>[Quem você é, por que escolheu TI e o que gosta de fazer. Dois parágrafos curtos bastam.]</p>
+    </section>
+
+    <!-- ========== EVOLUÇÃO ========== -->
+    <!-- Aqui a ordem importa (um módulo vem depois do outro), por isso usamos lista ordenada <ol> -->
+    <section class="secao" id="evolucao">
+      <h2>Minha evolução no curso</h2>
+      <ol class="linha-tempo">
+        <li>
+          <h3>IoT</h3>
+          <p>Programação em C++ com Arduino. [O que você montou ou aprendeu.]</p>
+        </li>
+        <li>
+          <h3>Web III</h3>
+          <p>JavaScript e noções de Java. Construí o site do CINE Atlântida. [O que foi mais difícil e o que você aprendeu com isso.]</p>
+        </li>
+        <li>
+          <h3>Análise e Qualidade de Software</h3>
+          <p>Estudo de caso do CINE Atlântida: diagramas BPMN e UML, DER, modelo físico em SQL e prototipação de telas.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ========== PROJETOS ========== -->
+    <!-- Para um projeto novo, copie um <article class="card"> inteiro e troque os textos -->
+    <section class="secao" id="projetos">
+      <h2>Projetos</h2>
+      <div class="grade">
+
+        <article class="card">
+          <h3>CINE Atlântida Web</h3>
+          <p>Sistema de venda de ingressos online para um cinema que vendia apenas no balcão. Projeto feito para a empresa fictícia VIG TECH.</p>
+          <p class="tecnologias">HTML, CSS, JavaScript, MySQL, UML, BPMN</p>
+          <a href="#">Ver projeto</a>
+        </article>
+
+        <article class="card">
+          <h3>[Nome do projeto]</h3>
+          <p>[O que ele faz e qual problema resolve.]</p>
+          <p class="tecnologias">[Tecnologias usadas]</p>
+          <a href="#">Ver projeto</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section class="secao" id="skills">
+      <h2>Skills</h2>
+      <h3>Já uso</h3>
+      <ul class="lista-skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>SQL</li>
+      </ul>
+      <h3>Estou aprendendo</h3>
+      <ul class="lista-skills">
+        <li>[Tecnologia]</li>
+      </ul>
+    </section>
+
+    <!-- ========== CONTATO ========== -->
+    <section class="secao" id="contato">
+      <h2>Contato</h2>
+      <p>Quer conversar sobre estágio ou projetos? Fale comigo:</p>
+      <ul class="contatos">
+        <li><a href="mailto:seu-email@exemplo.com">seu-email@exemplo.com</a></li>
+        <li><a href="https://www.linkedin.com/in/seu-perfil">LinkedIn</a></li>
+        <li><a href="https://github.com/seu-usuario">GitHub</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p>[Seu nome] · Portfólio em construção</p>
+  </footer>
+
+  <!-- O script vai no final para o HTML já estar carregado quando ele rodar -->
+  <script src="script.js"></script>
+</body>
+</html>
