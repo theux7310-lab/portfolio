@@ -1,16 +1,13 @@
-/* ========== VARIÁVEIS ==========
-   Para mudar o visual do site inteiro, troque os valores aqui. */
 :root {
-  --fundo: #0d1220;        /* azul-marinho bem escuro */
-  --superficie: #171f35;   /* cards e menu */
-  --vinho: #8a2342;        /* cor de destaque */
-  --vinho-claro: #d4607e;  /* links e foco */
+  --fundo: #0d1220;        
+  --superficie: #171f35;   
+  --vinho: #8a2342;        
+  --vinho-claro: #d4607e;  
   --texto: #ecebf0;
   --texto-suave: #a9acbd;
   --borda: #2a3350;
 }
 
-/* ========== BASE ========== */
 * { box-sizing: border-box; }
 
 html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
@@ -35,7 +32,6 @@ h3 { font-size: 1.2rem; margin: 0 0 .4rem; }
 a { color: var(--vinho-claro); }
 a:focus-visible, button:focus-visible { outline: 3px solid var(--vinho-claro); outline-offset: 3px; }
 
-/* ========== TOPO E MENU (celular primeiro) ========== */
 .topo {
   position: sticky;
   top: 0;
@@ -61,7 +57,6 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--vinho-claro); o
   cursor: pointer;
 }
 
-/* No celular o menu começa escondido; o JS adiciona a classe "aberto" */
 .menu { display: none; flex-direction: column; width: 100%; padding-top: .6rem; }
 .menu.aberto { display: flex; }
 .menu a { padding: .6rem 0; color: var(--texto); text-decoration: none; }
@@ -83,12 +78,10 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--vinho-claro); o
 }
 .botao:hover { background: #a02a4e; }
 
-/* ========== EVOLUÇÃO (linha do tempo) ========== */
 .linha-tempo { list-style: none; margin: 0; padding: 0 0 0 1.2rem; border-left: 3px solid var(--vinho); }
 .linha-tempo li { margin-bottom: 1.6rem; }
 .linha-tempo p { margin: 0; color: var(--texto-suave); max-width: 42rem; }
 
-/* ========== PROJETOS (cards) ========== */
 .grade { display: grid; grid-template-columns: 1fr; gap: 1.2rem; }
 
 .card {
@@ -100,7 +93,6 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--vinho-claro); o
 .card p { margin: 0 0 .8rem; color: var(--texto-suave); }
 .card .tecnologias { font-size: .9rem; color: var(--texto); }
 
-/* ========== SKILLS E CONTATO ========== */
 .lista-skills { list-style: none; display: flex; flex-wrap: wrap; gap: .5rem; padding: 0; margin: 0 0 1.4rem; }
 .lista-skills li { background: var(--superficie); border: 1px solid var(--borda); padding: .3rem .8rem; border-radius: 999px; }
 
@@ -108,7 +100,6 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--vinho-claro); o
 
 .rodape { text-align: center; padding: 2rem 1rem; color: var(--texto-suave); border-top: 1px solid var(--borda); }
 
-/* ========== TELAS MAIORES (a partir de 700px) ========== */
 @media (min-width: 700px) {
   .botao-menu { display: none; }
   .menu { display: flex; flex-direction: row; width: auto; gap: 1.4rem; padding-top: 0; }
